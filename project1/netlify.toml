@@ -1,0 +1,3 @@
+[build]
+base = "project1"
+publish = "."
