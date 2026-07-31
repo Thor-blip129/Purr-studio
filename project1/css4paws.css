@@ -6,7 +6,7 @@
 
 body {
     font-family: "Fredoka", sans-serif;
-    background: #ff6f6f;
+    background: #ffe5ec;
     min-height: 100vh;
     overflow-x: hidden;
     padding: 40px;
@@ -461,18 +461,7 @@ small {
 
     transition: 0.5s ease;
 }
-#bg-video {
-    position: fixed;
-    top: 0;
-    left: 0;
 
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-
-    z-index: -2;
-}
 
 body::before {
     content: "";
