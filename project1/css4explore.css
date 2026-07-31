@@ -1,0 +1,359 @@
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: "Fredoka", sans-serif;
+
+}
+
+body {
+
+    min-height: 100vh;
+
+    overflow-x: hidden;
+
+    color: rgb(7, 5, 5);
+
+}
+
+/* Background video */
+
+#bg-video {
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    z-index: -2;
+
+}
+
+/* Pink overlay */
+
+.overlay {
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    background: rgba(255, 192, 203, 0.35);
+
+    z-index: -1;
+
+}
+
+/* Navbar */
+
+nav {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 25px 50px;
+
+}
+
+nav h2 {
+
+    font-size: 30px;
+
+}
+
+nav a {
+
+    text-decoration: none;
+
+    color: white;
+
+    font-size: 20px;
+
+    background: rgba(255, 255, 255, 0.2);
+
+    padding: 10px 20px;
+
+    border-radius: 15px;
+
+    backdrop-filter: blur(10px);
+
+}
+
+/* Hero section */
+
+.hero {
+
+    text-align: center;
+
+    padding: 50px 20px;
+
+}
+
+.hero h1 {
+
+    font-size: 50px;
+
+    margin-bottom: 15px;
+
+}
+
+.hero p {
+
+    font-size: 22px;
+
+    margin-bottom: 25px;
+
+}
+
+#search {
+
+    width: 320px;
+
+    max-width: 90%;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    outline: none;
+
+    font-size: 18px;
+
+    text-align: center;
+
+}
+
+/* Cat breeds button */
+
+.breed-section {
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-bottom: 40px;
+
+}
+
+.breed-button {
+
+    background: #ff8fab;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 40px;
+
+    padding: 18px 40px;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+
+    text-decoration: none;
+
+}
+
+.breed-button:hover {
+
+    background: #ff6b9d;
+
+    transform: translateY(-5px);
+
+}
+
+/* Cards grid */
+
+.grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 25px;
+
+    padding: 20px 50px 60px;
+
+}
+
+/* Cards */
+
+.card {
+
+    background: rgba(255, 255, 255, 0.2);
+
+    backdrop-filter: blur(15px);
+
+    border-radius: 25px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    transition: 0.3s;
+
+}
+
+.card:hover {
+
+    transform: translateY(-8px);
+
+    background: rgba(255, 255, 255, 0.3);
+
+}
+
+.card span {
+
+    font-size: 50px;
+
+}
+
+.card h3 {
+
+    margin: 15px 0;
+
+    font-size: 28px;
+
+}
+
+.card p {
+
+    font-size: 18px;
+
+}
+
+/* Footer */
+
+footer {
+
+    text-align: center;
+
+    padding: 30px;
+
+    font-size: 18px;
+
+    background: rgba(0, 0, 0, 0.25);
+
+    backdrop-filter: blur(10px);
+
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    nav {
+
+        flex-direction: column;
+
+        gap: 15px;
+
+    }
+
+    .hero h1 {
+
+        font-size: 35px;
+
+    }
+
+    .hero p {
+
+        font-size: 18px;
+
+    }
+
+    .grid {
+
+        padding: 20px;
+
+    }
+
+    .breed-button {
+
+        width: 85%;
+
+        font-size: 18px;
+
+    }
+    
+
+}
+.back-btn {
+
+    text-decoration: none;
+
+    color: black;
+
+    font-size: 20px;
+
+}.search-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 20px;
+
+}
+
+.search-btn {
+
+    border: none;
+
+    border-radius: 25px;
+
+    padding: 15px 25px;
+
+    background: #ff8fab;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-family: "Fredoka", sans-serif;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+.search-btn:hover {
+
+    background: #ff6b9d;
+
+    transform: scale(1.05);
+
+}
